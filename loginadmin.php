@@ -90,7 +90,7 @@
      </style>
  </head>
  <body>
-     <form>
+     <form id="form1" name="form1" method="post" action="loginadmin_success.php">
          <div class="head">
            <h2>เข้าสู่ระบบผู้ดูแลระบบ</h2>
          </div>
