@@ -1,0 +1,132 @@
+/**
+ * datepicker styles
+ */
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+ .datepicker {
+    top: 0;
+    left: 0;
+    padding: 11px;
+    margin-top: 1px;
+     }
+    @media (max-width: 420px) {
+      .datepicker {
+        padding: 5px; } }
+    .datepicker.datepicker-rtl {
+      direction: rtl; }
+      .datepicker.datepicker-rtl table tr td span {
+        float: right; }
+    .datepicker.dropdown-menu {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      border: 1;
+      background: #fff;
+      color: #263e5b; }
+    .datepicker > div {
+      display: none; }
+    .datepicker table {
+      width: 100%;
+      margin: 0; }
+    .datepicker td,
+    .datepicker th {
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      padding: 7px 12px !important; }
+      @media (max-width: 420px) {
+        .datepicker td,
+        .datepicker th {
+          padding: 7px !important; } }
+      @media (max-width: 390px) {
+        .datepicker td,
+        .datepicker th {
+          padding: 5px !important; } }
+    .datepicker td {
+      font-weight: bold;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .datepicker td.day:hover, .datepicker td.today {
+        background: #263e5b;
+        color: #FFFFFF;
+        cursor: pointer; }
+      .datepicker td.day.disabled {
+        color: #ccc;
+        font-weight: 100;
+        cursor: default; }
+        .datepicker td.day.disabled:hover {
+          background: #263e5b; }
+      .datepicker td.old, .datepicker td.new {
+        color: #333;
+        font-weight: 100; }
+      .datepicker td.selected {
+        background: #263e5b;color:#fff; }
+      .datepicker td.range {
+        background: #7c8b9c; }
+      .datepicker td.active, .datepicker td.active:hover {
+        background: #263e5b;
+        color: #FFFFFF; }
+      .datepicker td span {
+        display: block;
+        width: 47px;
+        height: 54px;
+        line-height: 54px;
+        float: left;
+        margin: 2px;
+        cursor: pointer; }
+        .datepicker td span:hover {
+          background: rgba(38,62,91, 0.7); }
+        .datepicker td span.active {
+          background: #000000;
+          color: #FFFFFF;
+          text-shadow: 0 -1px 0 rgba(38,62,91, 0.25); }
+        .datepicker td span.old {
+          color: #333333; }
+    .datepicker th.switch {
+      width: 145px; }
+    .datepicker th.next, .datepicker th.prev {
+      font-size: 21px; }
+    .datepicker thead tr:first-child th {
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .datepicker thead tr:first-child th:hover {
+        background: #263e5b;
+        color: #FFFFFF; }
+  
+  .input-append.date .add-on i,
+  .input-prepend.date .add-on i {
+    display: block;
+    cursor: pointer;
+    width: 16px;
+    height: 16px; }
+  
+  body.white-datepicker .datepicker, body.room-details .datepicker {
+    background: #FFFFFF;
+    border: 1px solid #263e5b; }
+    body.white-datepicker .datepicker td.day:hover, body.white-datepicker .datepicker td.today, body.room-details .datepicker td.day:hover, body.room-details .datepicker td.today {
+      background: #ecedee;
+      color: #263e5b; }
+    body.white-datepicker .datepicker td.day.disabled, body.room-details .datepicker td.day.disabled {
+      color: #d0d4d7; }
+      body.white-datepicker .datepicker td.day.disabled:hover, body.room-details .datepicker td.day.disabled:hover {
+        background: #d0d4d7;
+        color: #FFFFFF; }
+    body.white-datepicker .datepicker td.old, body.white-datepicker .datepicker td.new, body.room-details .datepicker td.old, body.room-details .datepicker td.new {
+      color: #b4bbc0;
+      font-weight: 300; }
+    body.white-datepicker .datepicker td.selected, body.white-datepicker .datepicker td.selected:hover, body.room-details .datepicker td.selected, body.room-details .datepicker td.selected:hover {
+      background: #263e5b;
+      color: #FFFFFF; }
+    body.white-datepicker .datepicker td.range, body.room-details .datepicker td.range {
+      background: #dbc6a4; }
