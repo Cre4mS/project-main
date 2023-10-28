@@ -98,11 +98,11 @@
            <img src="assets/images/ผู้ดูแลระบบ.png" alt="">
          </div>
          <div class="form-group">
-           <input type="text" id="username"  placeholder="ชื่อผู้ใช้">
+           <input type="text" id="username "name="Username_admin"  placeholder="ชื่อผู้ใช้">
            <div class="bio">
-             <input type="password" id="password" name="password" placeholder="รหัสผ่าน">
+             <input type="password" id="password" name="Password_admin" placeholder="รหัสผ่าน">
            </div>
-         <a href="databooking.html"><button type="button" class="btn btn-danger">เข้าสู่ระบบ</button></a>
+           <input type="submit" name="submit" class="btn btn-success" value="เข้าสู่ระบบ"><br>
        </form>
 </body>
 </html>

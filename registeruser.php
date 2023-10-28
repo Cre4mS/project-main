@@ -112,36 +112,25 @@ button:hover {
 </style>
 </head>
 <body>
-    <form>
+<form method="POST" action="reg_success.php">
         <div class="head">
           <h2>สมัครสมาชิกผู้ใช้งาน</h2>
         </div>
         <div class="form-group">
-            <input type="text" placeholder="ชื่อผู้ใช้" id="Username">
+            <input type="text" placeholder="ชื่อผู้ใช้" id="Username" name="Username">
           <div class="bio">
-            <input type="text" placeholder=" ชื่อ"id="Firstname">
-            <input type="text" placeholder="นามสกุล"id="lastname">
-           </div>  
-            <div class="container">
-              <input name = "Sex" type = "radio" id="Sex" checked="checked">
-              <label for="Sex">ชาย</label>
-              <input name = "Sex" type = "radio" id="Sex2">
-              <label for="Sex2">หญิง</label>
-            </div>
+            <input type="text" placeholder=" ชื่อ"id="Firstname"name="Firstname">
+            <input type="text" placeholder="นามสกุล"id="Lastname"name="Lastname">
+           </div>
           <div class="form-group">
-            <input type="email" id="Email" placeholder="อีเมล์"><br>
-            <input type="password" id="Password" placeholder="รหัสผ่าน"><br>
-            <input type="password" id="Password2" placeholder="ยืนยันรหัสผ่าน"><br>
-            <textarea name="textarea"type="text" id="Address" placeholder=" ที่อยู่"></textarea><br>
-            <input type="text" id="Zipcode" placeholder=" รหัสไปรษณีย์"><br>
-            <input type="text" id="Tel" placeholder=" เบอร์"><br>
+            <input type="email" id="Email" name="Email" placeholder="อีเมล์"><br>
+            <input type="password" id="Password" name="Password" placeholder="รหัสผ่าน"><br>
+            <textarea name="Address"type="text" id="textarea"  placeholder=" ที่อยู่"></textarea><br>
+            <input type="text" id="Zipcode" name="Zipcode" placeholder=" รหัสไปรษณีย์"><br>
+            <input type="text" id="Tel" name="Tel" placeholder=" เบอร์"><br>
           </div>
         </div>
-            <a href="loginuser.php"><button type="button" class="btn btn-danger">
-                <div></div>
-                สมัครสมาชิก
-             <i class="fas fa-arrow-right"></i>
-            </button></a>
-      </form> 
+        <input type="submit" class="btn btn-success" value="สมัครสมาชิก">
+</form> 
 </body>
 </html>

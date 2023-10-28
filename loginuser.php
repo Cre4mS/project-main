@@ -1,12 +1,3 @@
-<?php
-require 'conn.php';
-$sql = "SELECT * FROM tb_regis";
-$result = $conn->query($sql);
-if(!$result){
-die("Error : ". $conn->$conn_error);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +90,7 @@ button:hover {
     </style>
 </head>
 <body>
-    <form>
+<form id="form1" name="form1" method="post" action="login_success.php">
         <div class="head">
           <h2>เข้าสู่ระบบผู้ใช้งาน</h2>
         </div>
@@ -107,12 +98,10 @@ button:hover {
           <img src="assets/images/ผู้ใช้งาน.png" alt="">
         </div>
         <div class="form-group">
-          <input name="username" type="text" id="username"  placeholder="ชื่อผู้ใช้">
-          <div class="bio">
-            <input type="password" id="password" name="password" placeholder="รหัสผ่าน">
-          </div>
-        <a href="index.html"><button type="button" class="btn btn-danger">เข้าสู่ระบบ</button></a><br>
-        <a href="registeruser.php" class="button">สมัครสมาชิก</a>
+          <input name="Username" type="text" id="Username"  placeholder="ชื่อผู้ใช้"><br>
+          <input type="password" id="Password" name="Password" placeholder="รหัสผ่าน"><br>
+          <input type="submit" name="submit" class="btn btn-success" value="เข้าสู่ระบบ"><br>
+          <a class="btn btn-success" href='registeruser.php'>สมัครสมาชิก</a>
       </form>
 </body>
 </html>
