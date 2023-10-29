@@ -23,6 +23,7 @@
                 <tr>
                     <th scope="col">รหัส</th>
                     <th scope="col-4">ชื่อแพ็คเกจ</th>
+                    <th scope="col-4">รูปแพ็คเกจ</th>
                     <th scope="col-4">ราคา</th>
                     <th scope="col-4">รายละเอียด</th>
                     <th scope="col-4">Edit</th>
@@ -33,7 +34,14 @@
                 <?php
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                            echo "<tr> <td>".$row["Id_pck"]."</td>"."<td>".$row["Name_pck"]."</td>"."<td>".$row["Price_pck"]."</td>"."<td>".$row["Detail_pck"]."</td>"."<td>"."<a class='btn btn-warning' href='editpackage.php? Id_pck=".$row["Id_pck"]."'>Edit</a>"."</td>"."<td>"."<a class='btn btn-warning' href='deletepackage.php? Id_pck=".$row["Id_pck"]."'>Delete</a>"."</td>";
+                            echo "<tr> 
+                            <td>".$row["Id_pck"]."</td>".
+                            "<td>".$row["Name_pck"]."</td>".
+                            "<td>".$row["image"]."</td>".
+                            "<td>".$row["Price_pck"]."</td>".
+                            "<td>".$row["Detail_pck"]."</td>".
+                            "<td>"."<a class='btn btn-warning' href='editpackage.php? Id_pck=".$row["Id_pck"]."'>แก้ไข</a>"."</td>".
+                            "<td>"."<a class='btn btn-danger' href='deletepackage.php? Id_pck=".$row["Id_pck"]. "' >ลบ</a>"."</td>";
                             echo "</tr>";    
                         }
                     }else {

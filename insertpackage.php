@@ -7,24 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เพิ่มข้อมูลแพ็คเกจ</title>
-<style>
-.container{
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  border: 2px solid #f3f3f3;
-  border-radius: 5px;
-  padding: 10px 30px;
-  align-items: center;
-}
-
-</style>
 </head>
 <body class="container">
     <form id="form1" name="form1" method="post" action="insertsuccess.php">
-        <p>
-            <label for="id">รหัส</label><br>
-            <input type="text" name="Id_pck" id="Id_pck">
-        </p>
         <p>
             <label for="name">ชื่อแพ็คเกจ</label><br>
             <input type="text" name="Name_pck" id="Name_pck">

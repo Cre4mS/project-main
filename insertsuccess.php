@@ -9,7 +9,7 @@
     <form action="datapackage.php">
     <?php
         require 'conn.php';
-        $sql_update="INSERT INTO tb_package (Id_pck,Name_pck,Price_pck,Detail_pck) VALUES ('$_POST[Id_pck]','$_POST[Name_pck]','$_POST[Price_pck]' ,'$_POST[Detail_pck]')";
+        $sql_update="INSERT INTO tb_package (Name_pck,Price_pck,image,Detail_pck) VALUES ('$_POST[Name_pck]','$_POST[Price_pck]','$_POST[image]','$_POST[Detail_pck]')";
 
         $result= $conn->query($sql_update);
 
