@@ -15,7 +15,7 @@
         if(!$result) {
             die("Error God Damn it : ". $conn->error);
         } else {
-        header("refresh: 1; url=http://localhost/project/loginuser.php");
+        header("refresh: 1; url=http://localhost/project/index.html");
         }
         ?>
 </body>

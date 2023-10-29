@@ -112,7 +112,7 @@ button:hover {
 </style>
 </head>
 <body>
-<form id="form1" name="form1"method="POST" action="reg_success.php">
+<form id="form1" name="form1"method="post" action="reg_success.php">
         <div class="head">
           <h2>สมัครสมาชิกผู้ใช้งาน</h2>
         </div>
