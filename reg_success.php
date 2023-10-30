@@ -18,7 +18,7 @@
         $result= $conn->query($sql_update);
         
         if($result) {
-            echo "<script> alert('สมัครสมาชิกสำเร็จ'); </script>";
+            echo "<script> alert('สมัครสมาชิกสำเร็จจจจจ'); </script>";
             echo "<script> window.location='loginuser.php'; </script>";
             
         } else {
