@@ -106,10 +106,8 @@ button:hover {
           <input name="Username" type="text" id="Username"  placeholder="ชื่อผู้ใช้"><br>
           <input type="password" id="Password" name="Password" placeholder="รหัสผ่าน"><br>
           <?php
-          if(!isset($_SESSION["Error"])){
-            echo "<div class='text-danger'>";
+          if(isset($_SESSION["Error"])){
             echo $_SESSION["Error"];
-            echo "</div>";
           }
           ?>
           <input type="submit" name="submit" class="btn btn-success" value="เข้าสู่ระบบ"><br>
