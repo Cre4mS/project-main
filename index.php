@@ -49,6 +49,7 @@
 			                    <li class="scroll"><a href="#works">แพ็คเกจทัวร์</a></li>
 			                    <li class="scroll"><a href="#explore">รูปภาพ</a></li>
 			                    <li class="scroll"><a href="#contact">ติดต่อเรา</a></li>
+								<a href="logout.php">ออกจากระบบ</a>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->

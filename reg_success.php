@@ -1,30 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="loginuser.php">
-    <?php
+<?php
         require 'conn.php';
 
+        $Username=$_POST['Username'];
+        $Firstname=$_POST['Firstname'];
+        $Lastname=$_POST['Lastname'];
+        $Email=$_POST['Email'];
+        $Password=$_POST['Password'];
+        $Address=$_POST['Address'];
+        $Zipcode=$_POST['Zipcode'];
+        $Tel=$_POST['Tel'];
+        
+        $Password=hash('sha512','&Password');
+
         $sql_update="INSERT INTO tb_regis(Username,Firstname,Lastname,Email,Password,Address,Zipcode,Tel) 
-        VALUES ('$_POST[Username]','$_POST[Firstname]','$_POST[Lastname]','$_POST[Email]','$_POST[Password]','$_POST[Address]','$_POST[Zipcode]','$_POST[Tel]')";
+        VALUES ('$Username','$Firstname','$Lastname','$Email','$Password','$Address','$Zipcode','$Tel')";
         
         $result= $conn->query($sql_update);
         
-        if(!$result) {
-            die("Error God Damn it : ". $conn->error);
+        if($result) {
+            echo "<script> alert('สมัครสมาชิกสำเร็จ'); </script>";
+            echo "<script> window.location='loginuser.php'; </script>";
+            
         } else {
-        echo "Register Success <br>";
-        header("refresh: 1; url=http://localhost/project/loginuser.php");
+            echo "Error God Damn it : ".$sql_update. mysqli_error($conn);
+            echo "<script> alert('สมัครสมาชิกไม่สำเร็จ'); </script>";
         }
         ?>
-        </form>
-</body>
-</html>
+       
 
 
 

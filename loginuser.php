@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,6 +105,13 @@ button:hover {
         <div class="form-group">
           <input name="Username" type="text" id="Username"  placeholder="ชื่อผู้ใช้"><br>
           <input type="password" id="Password" name="Password" placeholder="รหัสผ่าน"><br>
+          <?php
+          if(!isset($_SESSION["Error"])){
+            echo "<div class='text-danger'>";
+            echo $_SESSION["Error"];
+            echo "</div>";
+          }
+          ?>
           <input type="submit" name="submit" class="btn btn-success" value="เข้าสู่ระบบ"><br>
           <a class="btn btn-success" href='registeruser.php'>สมัครสมาชิก</a>
       </form>
